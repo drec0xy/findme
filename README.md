@@ -27,8 +27,13 @@ POSTGRES_PORT=
 ```bash
 docker-compose up --build
 ```
+4. Run Migrations 
+From the root of the repository, run migration by executing the following command
 
-4. Access app at by runnung 
+```bash
+python manage.py migrate
+```
+5. Access app at by runnung 
 
 ```bash
 python manage.py runserver
