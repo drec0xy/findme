@@ -50,7 +50,7 @@ the app should be accesible here
 ## Run tests
 
 ```bash
-python manage.py test user_auth
+python manage.py test user_auth.test_cases
 ```
 
 ---
