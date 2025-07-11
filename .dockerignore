@@ -1,3 +1,4 @@
 pgdata/
 .env
 user_auth/tests
+tests/

@@ -20,7 +20,6 @@ def login_view(request):
             login(request, user)
             print("User authenticated successfully")
             print(f"User email: {user.email}")
-            # Redirect to a success page.
             return redirect('/') 
         else:
             form.add_error(None, "Invalid credentials")
