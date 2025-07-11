@@ -59,4 +59,3 @@ python manage.py test user_auth.test_cases
 
 ---
 
-Let me know if you want me to help with anything else!
