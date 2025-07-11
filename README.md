@@ -28,7 +28,13 @@ POSTGRES_PORT=
 docker-compose up --build
 ```
 
-4. Access app at: [http://localhost:8000](http://localhost:8000)
+4. Access app at by runnung 
+
+```bash
+python manage.py runserver
+```
+the app should be accesible here
+ [http://localhost:8000](http://localhost:8000)
 
 ## Usage
 
