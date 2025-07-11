@@ -1,0 +1,130 @@
+:root {
+    --primary-color: #1665AE;
+    --accent-color: #519837;
+    --text-color: #333;
+    --font-size-base: 16px;
+    --font-size-lg: 24px;
+    --border-radius: 8px;
+    --form-width: 100%;
+    --form-max-width: 400px;
+    --background-color: #f8f9fa;
+    --shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    --spacing: 2.5rem;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: var(--font-size-base);
+    font-family: "Segoe UI", sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.form-container {
+    background: white;
+    padding: var(--spacing);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    width: var(--form-width);
+    max-width: var(--form-max-width);
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;     
+    min-height: 100vh;      
+    padding: 1rem;
+}
+
+.form-title {
+    color: var(--primary-color);
+    font-size: var(--font-size-lg);
+    margin-bottom: 1rem;
+}
+
+.form-logo {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 1rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.25rem;
+    font-weight: 600;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    width: 100%;
+}
+
+.btn-primary:hover {
+    background-color: #125498;
+}
+
+.text-muted {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.success-title {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+}
+
+.logout-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.power-icon {
+    width: 80px;
+    height: 80px;
+    fill: var(--accent-color);
+    transition: transform 0.2s ease;
+}
+
+.logout-button:hover .power-icon {
+    transform: scale(1.1);
+    filter: brightness(0.9);
+}

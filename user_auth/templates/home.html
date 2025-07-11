@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Home – FindMe{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1 class="success-title">Login Successful</h1>
+    <form method="post" action="{% url 'logout' %}">
+        {% csrf_token %}
+        <button type="submit" class="logout-button" title="Logout">
+            <img src="{% static 'images/power-icon.svg' %}" alt="Logout" class="power-icon">
+        </button>
+    </form>
+</div>
+{% endblock %}

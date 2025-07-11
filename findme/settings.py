@@ -54,8 +54,11 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'findme.urls'
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [BASE_DIR / 'findme' / 'static']
-STATIC_ROOT = BASE_DIR / "staticfiles"
+STATICFILES_DIRS = [
+                        BASE_DIR / 'findme' / 'static',
+                        BASE_DIR / 'user_auth' / 'static',
+                ]
+STATIC_ROOT = BASE_DIR / "static"
 
 TEMPLATES = [
     {

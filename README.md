@@ -1,1 +1,48 @@
-# findme
+Sure! Here's a short and simple README for your project:
+
+---
+
+# FindMe Mini Auth App
+
+Simple Django authentication app with email login/signup, styled with FindMe UI.
+
+## Setup
+
+1. Clone repo:
+
+```bash
+git clone git@github.com:drec0xy/findme.git
+cd findme
+```
+2. Add the env variables to the .env file
+```bash
+POSTGRES_DB=
+POSTGRES_USER=
+POSTGRES_PASSWORD=
+POSTGRES_HOST=
+POSTGRES_PORT=
+```
+3. Start the database using docker compose:
+
+```bash
+docker-compose up --build
+```
+
+4. Access app at: [http://localhost:8000](http://localhost:8000)
+
+## Usage
+
+* Signup at `/signup/`
+* Login at `/login/`
+* Logout at `/logout/`
+* Home at `/`
+
+## Run tests
+
+```bash
+python manage.py test user_auth
+```
+
+---
+
+Let me know if you want me to help with anything else!

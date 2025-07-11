@@ -4,24 +4,27 @@
 {% block title %}Login – FindMe{% endblock %}
 
 {% block content %}
-<div class="login-container">
-    <h2 class="login-title">Sign in to FindMe</h2>
-    <form method="post" novalidate>
-        {% csrf_token %}
-        {{ form.non_field_errors }}
-        <div class="form-group">
-            {{ form.username.label_tag }}
-            {{ form.username }}
-        </div>
-        <div class="form-group">
-            {{ form.password.label_tag }}
-            {{ form.password }}
-        </div>
-        <button type="submit" class="btn btn-primary">Login</button>
-    </form>
-    <p class="text-muted mt-3">
-        Don't have an account?
-        <a href="{% url 'signup' %}">Sign up here</a>
-    </p>
+<div class="container">
+    <img src="{% static 'images/findme-logo.png' %}" alt="FindMe Logo" class="form-logo">
+    <div class="form-container">
+        <h2 class="form-title">Sign in to FindMe</h2>
+        <form method="post" novalidate>
+            {% csrf_token %}
+            {{ form.non_field_errors }}
+            <div class="form-group">
+                {{ form.email.label_tag }}
+                {{ form.email }}
+            </div>
+            <div class="form-group">
+                {{ form.password.label_tag }}
+                {{ form.password }}
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+        <p class="text-muted mt-3">
+            Don't have an account?
+            <a href="{% url 'signup' %}">Sign up here</a>
+        </p>
+    </div>
 </div>
 {% endblock %}
