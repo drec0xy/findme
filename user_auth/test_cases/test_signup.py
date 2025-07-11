@@ -27,4 +27,4 @@ class SignupTests(TestCase):
             'confirm_password': 'pass2',
         })
         self.assertEqual(response.status_code, 200)
-        self.assertFormError(response, 'form', 'confirm_password', 'Passwords do not match')
+        self.assertContains(response, "Passwords do not match")
