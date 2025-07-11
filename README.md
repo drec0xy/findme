@@ -14,7 +14,7 @@ Simple Django authentication app with email login/signup, styled with FindMe UI.
 git clone git@github.com:drec0xy/findme.git
 cd findme
 ```
-2. Add the env variables to the .env file
+2. Add the env variables to the ```.env``` file on the root of the repository
 ```bash
 POSTGRES_DB=
 POSTGRES_USER=
