@@ -3,8 +3,6 @@
 
 # FindMe Mini Auth App
 
-Simple Django authentication app with email login/signup, styled with FindMe UI.
-
 ## Setup
 
 1. Clone repo:
