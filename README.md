@@ -26,13 +26,19 @@ POSTGRES_PORT=
 ```bash
 docker-compose up --build
 ```
-4. Run Migrations 
+4. Install python packages
+create and activate a virtual environment and run 
+```bash
+pip install -r requirements.txt
+```
+
+5. Run Migrations 
 From the root of the repository, run migration by executing the following command
 
 ```bash
 python manage.py migrate
 ```
-5. Access app at by runnung 
+6. Access app at by runnung 
 
 ```bash
 python manage.py runserver
